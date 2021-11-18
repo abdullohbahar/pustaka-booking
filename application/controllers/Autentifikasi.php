@@ -36,8 +36,8 @@ class Autentifikasi extends CI_Controller {
         if($this->form_validation->run() == false){
             $data['judul'] = 'Login';
             $data['user'] = '';
-            $this->load->view('templates/aute_header');
-            $this->load->view('autentifikasi/login');
+            $this->load->view('templates/aute_header',$data);
+            $this->load->view('autentifikasi/login',$data);
             $this->load->view('templates/aute_footer');
         }else{
             $this->_login();
