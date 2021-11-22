@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     { 
         public function __construct() { 
             parent::__construct(); 
-            cek_login();
+            // cek_login();
         } 
         
         public function index() 
