@@ -119,4 +119,14 @@ class Autentifikasi extends CI_Controller {
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert"> Selamat!! akun member anda sudah dibuat. Silahkan Aktivasi Akun anda</div>'); redirect('autentifikasi');
             } 
         }
+
+        public function blok()
+        {
+            $this->load->view('autentifikasi/blok');
+        }
+
+        public function gagal()
+        {
+            $this->load->view('autentifikasi/gagal');
+        }
 }
